@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c126hm4oiuwiq"]
+
+[ext_resource type="Texture2D" uid="uid://c658yfwn3sdqw" path="res://sprites/platforms.png" id="1_wltir"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_jiowd"]
+a = Vector2(81, -10)
+
+[node name="RigidBody2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-48, -42)
+shape = SubResource("SegmentShape2D_jiowd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -4)
+texture = ExtResource("1_wltir")
